@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Éffacée de la science</title>
+    <title>Contact - Éffacée de la science</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="icon"
@@ -13,13 +13,13 @@
     />
     <meta
       name="description"
-      content="Site dédié à la reconnaissance des femmes dans le domaine scientifique."
+      content="Contact page for the Éffacée de la science website."
     />
   </head>
   <body>
     <header class="header">
       <div class="header__container">
-        <a href="../index.html" class="header__logo-link" aria-label="Accueil">
+        <a href="fr\index.html" class="header__logo-link" aria-label="Accueil">
           <img
             src="../assets/img/vector/Languebutton.svg"
             alt=""
@@ -31,7 +31,7 @@
         <div class="header__actions">
           <a
             class="header__lang-button"
-            href="en/methodeball.html"
+            href="en/contact.html"
             aria-label="English"
             >EN</a
           >
@@ -79,135 +79,48 @@
         ></div>
       </div>
     </header>
+
     <main>
-      <section class="hero">
-        <div class="hero__content">
-          <img
-            src="../assets/img/hero.webp"
-            alt="Alice Ball"
-            class="hero__image"
-          />
-          <h1 class="hero__title">Women in science deserve to be seen</h1>
-          <p class="hero__subtitle">
-            Discover those whom history has ignored for too long. Dive into
-            their discoveries, struggles, and legacy.
-          </p>
-        </div>
+      <section class="contact">
+        <h1 class="contact__title">Contact Us</h1>
+        <form class="contact__form" action="#" method="POST">
+          <div class="contact__form-group">
+            <label for="name" class="contact__form-label">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="contact__form-input"
+              required
+            />
+          </div>
+          <div class="contact__form-group">
+            <label for="email" class="contact__form-label">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="contact__form-input"
+              required
+            />
+          </div>
+          <div class="contact__form-group">
+            <label for="message" class="contact__form-label">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              class="contact__form-textarea"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="contact__form-button">
+            Send Message
+          </button>
+        </form>
       </section>
     </main>
 
-    <article class="card">
-      <div>
-        <h2 class="card__title">Alice Ball, the forgotten researcher</h2>
-        <p class="card__text">
-          Alice Ball, a brilliant chemist, revolutionized the treatment of
-          leprosy before being erased from history Rediscover her exceptional
-          journey
-        </p>
-      </div>
-      <div>
-        <img
-          src="../assets/img/PortraitAlice.webp"
-          alt="Alice Ball"
-          class="card__image"
-        />
-      </div>
-      <div>
-        <button class="card__button">
-          <a href="aliceball.html">Discover Alice Ball</a>
-        </button>
-      </div>
-    </article>
-
-    <article class="card">
-      <div>
-        <h2 class="card__title">Women Scientists in Literature</h2>
-        <p class="card__text">
-          Literature preserves the memory of women in science and gives them the
-          recognition they deserve
-        </p>
-      </div>
-      <div>
-        <img
-          src="../assets/img/accueillitterature.webp"
-          alt="open book"
-          class="card__image"
-        />
-      </div>
-      <div>
-        <button class="card__button">
-          <a href="litterature.html">The Matilda Literature</a>
-        </button>
-      </div>
-    </article>
-
-    <article class="card">
-      <div>
-        <h2 class="card__title">The Ball Method, Simplified</h2>
-        <p class="card__text">
-          Découvrez simplement le procédé chimique qui a permis à Alice Ball de
-          soigner la lèpre grâce à l'huile de chaulmoogra.
-        </p>
-      </div>
-      <div>
-        <img
-          src="../assets/img/laboratoirealiceball.webp"
-          alt="Alice Ball laboratory"
-          class="card__image"
-        />
-      </div>
-      <div>
-        <button class="card__button">
-          <a href="methodeball.html">Understand the Method</a>
-        </button>
-      </div>
-    </article>
-
-    <article class="card">
-      <div>
-        <h2 class="card__title">
-          The Ball Method : When Cinema Highlights Women Scientists
-        </h2>
-        <p class="card__text">
-          The short film The Ball Method brings the young chemist and her erased
-          scientific legacy back to life.
-        </p>
-      </div>
-      <div>
-        <img
-          src="../assets/img/theballmethod.webp"
-          alt="The Ball Method poster"
-          class="card__image"
-        />
-      </div>
-      <div>
-        <button class="card__button">
-          <a href="cinema.html">Cinema</a>
-        </button>
-      </div>
-    </article>
-
-    <article class="card">
-      <div>
-        <h2 class="card__title">The Little Book of Great Epidemics</h2>
-        <p class="card__text">
-          A book to understand the great battles against diseases, mirroring
-          Alice Ball's fight
-        </p>
-      </div>
-      <div>
-        <img
-          src="../assets/img/lepetitlivredesgrandesepidemies.webp"
-          alt="Book cover"
-          class="card__image"
-        />
-      </div>
-      <div>
-        <button class="card__button">
-          <a href="livrebu.html">Explore the Book</a>
-        </button>
-      </div>
-    </article>
     <footer class="footer">
       <div class="footer__container">
         <a href="/" class="footer__logo-link" aria-label="Pied de page">

@@ -1,0 +1,146 @@
+:root {
+  --deep-blue: #0e1b3d;
+  --cream: #f9f3e4;
+  --mint: #8ef6c1;
+  --white: #ffffff;
+  --text-color: #1a1a1a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  font-family: "Arial", sans-serif;
+  background-color: var(--cream);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.h1,
+.h2,
+.h3 {
+  font-family: "Playfair Display", serif; /* Utilise une police serif pour le look académique */
+  color: var(--deep-blue);
+  margin-bottom: 1rem;
+}
+
+/* Header & Navigation */
+.header {
+  background-color: var(--deep-blue);
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--white);
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--mint);
+  border-radius: 50%; /* Placeholder pour le logo */
+}
+
+.nav-icons {
+  display: flex;
+  gap: 20px;
+  color: var(--mint);
+  font-size: 1.5rem;
+}
+
+/* Sections Globales */
+section {
+  padding: 2rem 10%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-image {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  object-fit: cover;
+}
+
+/* Composants Spécifiques */
+.btn-arrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--deep-blue);
+  text-decoration: none;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.btn-arrow::before {
+  content: "➔";
+  color: var(--mint);
+  font-size: 1.2rem;
+}
+
+.card-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: transparent;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  background-color: var(--deep-blue);
+  color: var(--white);
+  padding: 3rem 10%;
+  margin-top: 4rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 2rem;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Timeline (Pour la page Littérature) */
+.timeline-item {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.timeline-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+}
