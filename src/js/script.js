@@ -1,16 +1,8 @@
-const carousel = document.querySelector(".carousel__container");
-const prevButton = document.querySelector(".carousel__button--prev");
-const nextButton = document.querySelector(".carousel__button--next");
+const menuToggle = document.querySelector(".header__menu-toggle");
+const nav = document.querySelector(".header__nav");
 
-const premierItem = document.querySelector(".carousel__item");
-const scrollAmount = premierItem.clientWidth;
-
-if (carousel)
-  prevButton.addEventListener("click", () => {
-    carousel.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-  });
-
-if (carousel)
-  nextButton.addEventListener("click", () => {
-    carousel.scrollBy({ left: +scrollAmount, behavior: "smooth" });
-  });
+menuToggle.addEventListener("click", () => {
+  const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
+  menuToggle.setAttribute("aria-expanded", !isExpanded);
+  nav.classList.toggle("header__nav--active");
+});

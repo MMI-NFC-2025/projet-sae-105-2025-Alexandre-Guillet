@@ -1,0 +1,8 @@
+:root {
+  --bleuf: #141e46;
+  --cream: #fff5e0;
+  --verts: #8decb4;
+  --white: #ffffff;
+  --vertf: #41b06e;
+  --transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
