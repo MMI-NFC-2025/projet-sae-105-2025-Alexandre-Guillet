@@ -19,9 +19,11 @@ html {
 /**
  * Remove the margin in all browsers.
  */
+@import url("./variables.css");
 
 body {
   margin: 0;
+  background-color: var(--cream);
 }
 
 /**

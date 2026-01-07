@@ -2,7 +2,8 @@
 
 .header {
   background-color: var(--bleuf);
-  padding: 1rem 10%;
+
+  padding: 3% 10%;
   position: relative;
   z-index: 1000;
 }
@@ -105,4 +106,8 @@
   font-weight: 400;
   transition: color 0.3s ease;
   display: block;
+}
+
+.no-scroll {
+  overflow: hidden;
 }

@@ -1,16 +1,70 @@
-.hero-image {
+@import url("../base/variables.css");
+
+.hero {
+  background-color: var(--cream);
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.hero__content {
   width: 100%;
-  border-radius: 10%;
-  margin-bottom: 2rem;
+  max-width: 450px;
+}
+
+.hero__visual {
+  position: relative;
+  background-color: var(--verts);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  aspect-ratio: 4 / 5;
+  transition: transform var(--transition);
+}
+
+.hero__visual:hover {
+  transform: translateY(-5px);
+}
+
+.hero__image {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .card {
-  background: transparent;
+  background-color: var(--cream);
+  padding: 2rem;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.card img {
+.card__title {
+  color: var(--black);
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.card__text {
+  color: var(--bleuf);
+  font-family: "Georgia", serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+.card__image {
   width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 40px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  display: block;
 }

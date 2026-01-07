@@ -6,6 +6,10 @@
 
 @import url("./layout/footer.css");
 
+@import url("./components/cards.css");
+
+@import url("./components/buttons.css");
+
 .btn-arrow {
   display: flex;
   align-items: center;
