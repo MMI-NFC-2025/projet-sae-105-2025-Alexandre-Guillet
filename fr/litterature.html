@@ -4,155 +4,294 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Éffacée de la science - Littérature</title>
+    <title>Éffacées de la science</title>
     <link rel="stylesheet" href="../src/css/styles.css" />
-    <link
-      rel="icon"
-      href="../assets/img/vector/logo-short.svg"
-      type="image/svg+xml"
-    />
+    <script type="" src="../src/js/script.js" defer></script>
     <meta
       name="description"
       content="Site dédié à la reconnaissance des femmes dans le domaine scientifique."
+    />
+    <link
+      rel="icon"
+      href="../assets/img/vector/logo-short.svg"
+      type="image/svg"
     />
   </head>
   <body>
     <header class="header">
       <div class="header__container">
-        <a href="../index.html" class="header__logo-link" aria-label="Accueil">
+        <a href="index.html" class="header__logo-link" aria-label="Accueil">
           <img
-            src="../assets/img/vector/Languebutton.svg"
+            src="../assets/img/vector/logo-short.svg"
             alt=""
             class="header__logo"
           />
-          <span class="header__site-name">Éffacée de la science</span>
+          <span class="header__site-name">Effacées de la science</span>
         </a>
 
         <div class="header__actions">
           <a
+            href="../en/indexen.html"
             class="header__lang-button"
-            href="/en/indexen.html"
             aria-label="English"
-          >EN</a>
-          <button 
+          >
+            <img
+              src="../assets/img/vector/Languebutton.svg"
+              alt="EN"
+              class="header__lang-icon"
+            />
+          </a>
+
+          <button
             class="header__menu-toggle"
             type="button"
             aria-expanded="false"
             aria-controls="navigation"
           >
-            <span class="header__toggle-icon"></span>
+            <span class="header__toggle-icon">
+              <img src="../assets/img/menu.svg" alt="menu" />
+            </span>
           </button>
         </div>
 
-<nav id="navigation" class="header__nav">
-  <ul class="header__menu-list">
-    <li class="header__menu-item">
-      <a href="aliceball.html" class="header__menu-link">Alice Ball</a>
-    </li>
-    <li class="header__menu-item">
-      <a href="litterature.html" class="header__menu-link">Littérature</a>
-    </li>
-    <li class="header__menu-item">
-      <a href="cinema.html" class="header__menu-link">Cinéma</a>
-    </li>
-    <li class="header__menu-item">
-      <a href="methodeball.html" class="header__menu-link">Méthode Ball</a>
-    </li>
-     <li class="header__menu-item">
-      <a href="contact.html" class="header__menu-link">Contact</a>
-    </li>
-  </ul>
-</nav>
-
-        <div
-          id="lang-switcher"
-          class="header__lang-switcher header__lang-switcher--hidden"
-        ></div>
-      </div>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="hero__content">
-          <img
-            src="../assets/img/litterature-hero.webp"
-            alt="Livres et science"
-            class="hero__image"
-          />
-          <h1 class="hero__title">
-            Littérature : femmes scientifiques et mémoire
-          </h1>
-          <p class="hero__subtitle">
-            La littérature permet de restituer la place des femmes dans
-            l'histoire des sciences, d'interroger le Matilda effect et de
-            célébrer leurs parcours.
-          </p>
-        </div>
-      </section>
-
-      <section class="content content--books">
-        <h2>Lectures recommandées</h2>
-        <ul>
-          <li>
-            <strong>The Matilda Effect</strong> — études et essais sur la
-            reconnaissance des femmes en science.
-          </li>
-          <li>
-            <strong>Biographies</strong> — ouvrages retraçant la vie de
-            chercheuses marquantes (Alice Ball, Rosalind Franklin...).
-          </li>
-          <li>
-            <strong>Romans</strong> — fictions inspirées de parcours
-            scientifiques féminins.
-          </li>
-        </ul>
-        <p>
-          Voir aussi la sélection complète dans
-          <a href="livrebu.html">Livre BU</a>.
-        </p>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="footer__container">
-        <a href="/" class="footer__logo-link" aria-label="Pied de page">
-          <img
-            src="../assets/img/vector/logo-short.svg"
-            alt="Logo du site"
-            class="footer__logo"
-          />
-          <span class="footer__site-name">Éffacée de la science</span>
-        </a>
-        <a href="../assets/img/vector/arrow-circle-up1.svg"></a>
-      </div>
-      <div>
-        <nav>
-          <ul class="footer__menu-list">
-            <li class="footer__menu-item">
-              <a href="aliceball.html" class="footer__menu-link">Alice Ball</a>
+        <nav id="navigation" class="header__nav">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a href="aliceball.html" class="header__menu-link">Alice Ball</a>
             </li>
-            <li class="footer__menu-item">
-              <a href="littérature.html" class="footer__menu-link"
+            <li class="header__menu-item">
+              <a href="litterature.html" class="header__menu-link"
                 >Littérature</a
               >
             </li>
-            <li class="footer__menu-item">
-              <a href="cinéma.html" class="footer__menu-link">Cinéma</a>
+            <li class="header__menu-item">
+              <a href="cinema.html" class="header__menu-link">Cinéma</a>
             </li>
-            <li class="footer__menu-item">
-              <a href="methodeball.html" class="footer__menu-link"
+            <li class="header__menu-item">
+              <a href="livrebu.html" class="header__menu-link"
+                >Livre sélectionné</a
+              >
+            </li>
+            <li class="header__menu-item">
+              <a href="methodeball.html" class="header__menu-link"
                 >Méthode Ball</a
               >
             </li>
-            <li class="footer__menu-item">
-              <a href="livrebu.html" class="footer__menu-link">Livre BU</a>
-            </li>
-            <li class="footer__menu-item">
-              <a href="contact.html" class="footer__menu-link">Contact</a>
+            <li class="header__menu-item">
+              <a href="contact.html" class="header__menu-link">Contact</a>
             </li>
           </ul>
         </nav>
-        <p class="footer__text">  
-          <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/"><span>Montbéliard</span></a>
-        </p>
+      </div>
+    </header>
+   <main class="biography">
+      <figure class="biography__figure">
+        <img 
+          src="../assets/img/illustrationeffetm.webp" 
+          alt="Image représentant des livres sur des femmes scientifiques" 
+          class="biography__image"
+      />
+      <figcaption class="biography__caption">Ilustration de l'effet Matilda</figcaption>
+    </figure>
+    </figure>
+
+    <article class="biography__content">
+      <h2 class="biography__subtitle">Pour aller plus loin - Lectures recommandées</h2>
+      <p class="biography__text">
+        La littérature joue aujourd'hui un rôle crucial dans la réhabilitation de ces figures oubliées. Des ouvrages comme "Women in science" de Rachel Ignotofsky redonnent vie à ces pionnières et documentent leurs contributions essentielles.
+        Ces livres ne se contentent pas de raconter des histoires : ils interrogent nos biais, déconstruisent les mythes du "génie solitaire" masculin, et révèlent les mécanismes qui ont perpétué l'invisibilisation des femmes dans les sciences. Ils deviennent ainsi des outils de justice mémorielle.
+        En mettant en lumière ces parcours exceptionnels, la littérature contemporaine participe à la construction d'une histoire des sciences plus inclusive et plus fidèle à la réalité. Elle inspire également les nouvelles générations de femmes scientifiques en leur montrant qu'elles ne sont pas seules, qu'elles s'inscrivent dans une longue lignée de pionnières.
+      </p>
+  </article>
+      <article class="biography__content">
+      <h2 class="biography__subtitle">Les femmes scientifiques dans la littérature</h2>
+   <figure class="biography__figure">
+        <img 
+          src="../assets/img/womeninscience.webp" 
+          alt="couverture du livre Women in Science de Rachel Ignotofsky" 
+          class="biography__image"
+      />
+      <figcaption class="biography__caption">"Femmes de science" de Rachel Ignotofsky</figcaption>
+    </figure>
+    </figure>
+    </article>
+      <article class="biography__content">
+        <img 
+          src="../assets/img/lesdecouvreuses.webp" 
+          alt="couverture du livre Les Découvreuses de Annabelle Kremer" 
+          class="biography__image"
+      />
+      <figcaption class="biography__caption">"Les Découvreuses" de Annabelle Kremer</figcaption>
+    </figure>
+    </figure>
+    </article>
+      <article class="biography__content">
+        <img 
+          src="../assets/img/nivues.webp" 
+          alt="couverture du livre Ni vues ni connues du Collectif Georgette Sand" 
+          class="biography__image"
+      />
+      <figcaption class="biography__caption">"Ni vues ni connues" du Collectif Georgette Sand</figcaption>
+    </figure>
+    </figure>
+    </article>
+
+    <section class="timeline">
+  <article class="biography__content">
+      <h2 class="biography__subtitle">Frise chronologique des Matilda</h2>
+      <p class="biography__text">
+        Sept femmes scientifiques dont les contributions ont été occultées.
+      </p>
+  </article>
+  <div class="timeline__container">
+    <div class="timeline__item">
+      <div class="timeline__media">
+        <img src="../assets/img/Nicole-ReineLepaute.webp" alt="Image de Nicole-Reine Lepaute" class="timeline__img">
+      </div>
+      <div class="timeline__arrow">
+        <img src="../assets/img/vector/arrowright.svg" alt="">
+      </div>
+      <div class="timeline__content">
+        <span class="timeline__date">1750</span>
+        <h3 class="timeline__title">Nicole-Reine Lepaute - Astronomie</h3>
+        <p class="timeline__text">En savoir plus...</p>
+      </div>
+    </div>
+
+   <div class="timeline__container">
+    <div class="timeline__item">
+      <div class="timeline__media">
+        <img src="../assets/img/AdaLovelace.webp" alt="Image d'Ada Lovelace" class="timeline__img">
+      </div>
+      <div class="timeline__arrow">
+        <img src="../assets/img/vector/arrowright.svg" alt="">
+      </div>
+      <div class="timeline__content">
+        <span class="timeline__date">1843</span>
+        <h3 class="timeline__title">Ada Lovelace - Informatique</h3>
+        <p class="timeline__text">En savoir plus...</p>
+      </div>
+    </div>
+     <div class="timeline__container">
+    <div class="timeline__item">
+      <div class="timeline__media">
+        <img src="../assets/img/PortraitAlice.webp" alt="Image d'Alice Ball" class="timeline__img">
+      </div>
+      <div class="timeline__arrow">
+        <img src="../assets/img/vector/arrowright.svg" alt="">
+      </div>
+      <div class="timeline__content">
+        <span class="timeline__date">1915</span>
+        <h3 class="timeline__title">Alice Ball - Chimie</h3>
+        <p class="timeline__text">En savoir plus...</p>
+      </div>
+    </div>
+     <div class="timeline__container">
+    <div class="timeline__item">
+      <div class="timeline__media">
+        <img src="../assets/img/LiseMeitner.webp" alt="Image de Lise Meitner" class="timeline__img">
+      </div>
+      <div class="timeline__arrow">
+        <img src="../assets/img/vector/arrowright.svg" alt="">
+      </div>
+      <div class="timeline__content">
+        <span class="timeline__date">1938</span>
+        <h3 class="timeline__title">Lise Meitner - Physique nucléaire</h3>
+        <p class="timeline__text">En savoir plus...</p>
+      </div>
+    </div>
+     <div class="timeline__container">
+    <div class="timeline__item">
+      <div class="timeline__media">
+        <img src="../assets/img/RosalindFranklin.webp" alt="Image de Rosalind Franklin" class="timeline__img">
+      </div>
+      <div class="timeline__arrow">
+        <img src="../assets/img/vector/arrowright.svg" alt="">
+      </div>
+      <div class="timeline__content">
+        <span class="timeline__date">1952</span>
+        <h3 class="timeline__title">Rosalind Franklin - Biologie moléculaire</h3>
+        <p class="timeline__text">En savoir plus...</p>
+      </div>
+    </div>
+     <div class="timeline__container">
+    <div class="timeline__item">
+      <div class="timeline__media">
+        <img src="../assets/img/JocelynBellBurnell.webp" alt="Image de Jocelyn Bell Burnell" class="timeline__img">
+      </div>
+      <div class="timeline__arrow">
+        <img src="../assets/img/vector/arrowright.svg" alt="">
+      </div>
+      <div class="timeline__content">
+        <span class="timeline__date">1967</span>
+        <h3 class="timeline__title">Jocelyn Bell Burnell - Astrophysique</h3>
+        <p class="timeline__text">En savoir plus...</p>
+      </div>
+    </div>
+     <div class="timeline__container">
+    <div class="timeline__item">
+      <div class="timeline__media">
+        <img src="../assets/img/Chien-ShiungWu.webp" alt="Image de Chien-Shiung Wu" class="timeline__img">
+      </div>
+      <div class="timeline__arrow">
+        <img src="../assets/img/vector/arrowright.svg" alt="">
+      </div>
+      <div class="timeline__content">
+        <span class="timeline__date">1974</span>
+        <h3 class="timeline__title">Chien-Shiung Wu - Physique des particules</h3>
+        <p class="timeline__text">En savoir plus...</p>
+      </div>
+    </div>
+</section>
+</main>
+
+
+    <footer class="footer">
+      <div class="footer__container">
+        <a href="/" class="footer__logo-link" aria-label="Accueil">
+          <img
+            src="../assets/img/vector/logo-short.svg"
+            alt="Logo"
+            class="footer__logo"
+          />
+          <span class="footer__site-name">Effacées de la science</span>
+        </a>
+
+        <a href="#top" class="footer__back-to-top" aria-label="Retour en haut">
+          <img
+            src="../assets/img/vector/arrow-circle-up1.svg"
+            alt=""
+            class="footer__arrow-up"
+          />
+        </a>
+      </div>
+
+      <div class="footer__content">
+        <h3 class="footer__tagline">Effacées de la science</h3>
+
+        <div class="footer__legal">
+          <h3 class="footer__title">Mentions légales :</h3>
+          <p class="footer__text">
+            Projet réalisé en 2025 dans le cadre d'un exercice pédagogique au
+            département MMi de
+            <a
+              class="footer__link"
+              href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/"
+              >Montbéliard</a
+            >
+          </p>
+        </div>
+
+        <div class="footer__contact">
+          <p>Design par Alexandre GUILLET</p>
+          <p>Pour me contacter,</p>
+          <a
+            href="mailto:alexandre.guillet@univ-fcomte.fr"
+            class="footer__email"
+            >alexandre.guillet@univ-fcomte.fr</a
+          >
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

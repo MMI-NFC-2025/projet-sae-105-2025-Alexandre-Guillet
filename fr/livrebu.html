@@ -1,40 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Éffacée de la science</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="icon"
-      href="assets/img/vector/logo-short.svg"
-      type="image/svg+xml"
-    />
+    <title>Éffacées de la science</title>
+    <link rel="stylesheet" href="../src/css/styles.css" />
+    <script type="" src="../src/js/script.js" defer></script>
     <meta
       name="description"
       content="Site dédié à la reconnaissance des femmes dans le domaine scientifique."
+    />
+    <link
+      rel="icon"
+      href="../assets/img/vector/logo-short.svg"
+      type="image/svg"
     />
   </head>
   <body>
     <header class="header">
       <div class="header__container">
-        <a href="../index.html" class="header__logo-link" aria-label="Accueil">
+        <a href="index.html" class="header__logo-link" aria-label="Accueil">
           <img
-            src="../assets/img/vector/Languebutton.svg"
+            src="../assets/img/vector/logo-short.svg"
             alt=""
             class="header__logo"
           />
-          <span class="header__site-name">Éffacée de la science</span>
+          <span class="header__site-name">Effacées de la science</span>
         </a>
 
         <div class="header__actions">
           <a
+            href="../en/indexen.html"
             class="header__lang-button"
-            href="en/livrebu.html"
             aria-label="English"
-            >EN</a
           >
+            <img
+              src="../assets/img/vector/Languebutton.svg"
+              alt="EN"
+              class="header__lang-icon"
+            />
+          </a>
 
           <button
             class="header__menu-toggle"
@@ -42,207 +48,143 @@
             aria-expanded="false"
             aria-controls="navigation"
           >
-            <span class="header__toggle-icon"></span>
+            <span class="header__toggle-icon">
+              <img src="../assets/img/menu.svg" alt="menu" />
+            </span>
           </button>
         </div>
 
-<nav id="navigation" class="header__nav">
-  <ul class="header__menu-list">
-    <li class="header__menu-item">
-      <a href="aliceball.html" class="header__menu-link">Alice Ball</a>
-    </li>
-    <li class="header__menu-item">
-      <a href="litterature.html" class="header__menu-link">Littérature</a>
-    </li>
-    <li class="header__menu-item">
-      <a href="cinema.html" class="header__menu-link">Cinéma</a>
-    </li>
-    <li class="header__menu-item">
-      <a href="methodeball.html" class="header__menu-link">Méthode Ball</a>
-    </li>
-     <li class="header__menu-item">
-      <a href="contact.html" class="header__menu-link">Contact</a>
-    </li>
-  </ul>
-</nav>
-
-        <div
-          id="lang-switcher"
-          class="header__lang-switcher header__lang-switcher--hidden"
-        ></div>
+        <nav id="navigation" class="header__nav">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a href="aliceball.html" class="header__menu-link">Alice Ball</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="litterature.html" class="header__menu-link"
+                >Littérature</a
+              >
+            </li>
+            <li class="header__menu-item">
+              <a href="cinema.html" class="header__menu-link">Cinéma</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="methodeball.html" class="header__menu-link"
+                >Méthode Ball</a
+              >
+            </li>
+            <li class="header__menu-item">
+              <a href="livrebu.html" class="header__menu-link"
+                >Livre sélectionné</a
+              >
+            </li>
+            <li class="header__menu-item">
+              <a href="contact.html" class="header__menu-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
-    <main>
-      <section class="hero">
-        <div class="hero__content">
-          <img
-            src="../assets/img/hero.webp"
-            alt="Alice Ball"
-            class="hero__image"
-          />
-          <h1 class="hero__title">Women in science deserve to be seen</h1>
-          <p class="hero__subtitle">
-            Discover those whom history has ignored for too long. Dive into
-            their discoveries, struggles, and legacy.
-          </p>
-        </div>
-      </section>
-    </main>
+    <main class="biography">
+      <figure class="biography__figure">
+        <img 
+          src="../assets/img/lepetitlivredesgrandesepidemies.webp" 
+          alt="Couverture du livre Le Petit Livre des Grandes Épidémies" 
+          class="biography__image"
+      />
+      <figcaption class="biography__caption">Le Petit Livre des Grandes Épidémies</figcaption>
+    </figure>
+    </figure>
 
-    <article class="card">
+    <article class="biography__content">
+      <h2 class="biography__subtitle">“Le Petit Livre des Grandes Épidémies”
+Comprendre les luttes historiques contre les maladies</h2>
+      <p class="biography__text">
+        "Le Petit Livre des Grandes Épidémies" offre un panorama fascinant des combats menés par l'humanité contre les maladies infectieuses à travers l'histoire. De la peste noire à la COVID-19, cet ouvrage retrace les grandes épidémies qui ont marqué notre monde et les avancées scientifiques qui ont permis de les combattre.
+Ce livre trouve une résonance particulière avec l'histoire d'Alice Ball, dont la découverte a transformé le traitement de la lèpre, l'une des maladies les plus stigmatisées de l'histoire humaine.
+      </p>
+     <h2 class="biography__subtitle">La lèpre : une épidémie millénaire</h2>
+      <p class="biography__text">
+        La lèpre, également connue sous le nom de maladie de Hansen, a terrorisé l'humanité pendant des millénaires. Mentionnée dans des textes anciens de l'Égypte, de l'Inde et de la Chine, elle était considérée comme une malédiction divine et conduisait à l'exclusion sociale totale des malades.
+        Au Moyen Âge, les lépreux étaient contraints de porter des cloches pour avertir de leur approche et de vivre dans des léproseries, isolés de la société. Cette stigmatisation a persisté jusqu'au XXe siècle, même dans les communautés où la maladie était relativement bien comprise sur le plan médical.
+        La découverte d'Alice Ball en 1916 a marqué un tournant décisif. Pour la première fois, un traitement efficace existait, permettant aux patients de sortir des léproseries et de reprendre une vie normale. Son travail s'inscrit dans la longue histoire de la lutte contre cette maladie dévastatrice.
+        Les héros méconnus de la santé publique
+        Le livre met en lumière de nombreuses figures, souvent méconnues, qui ont contribué à sauver des millions de vies. Parmi elles, un nombre disproportionné de femmes dont les contributions ont été minimisées ou oubliées, à l'image d'Alice Ball.
+        L'ouvrage explore comment les épidémies ont façonné nos sociétés, influencé l'urbanisme, transformé la médecine et révélé les inégalités sociales. Chaque épidémie raconte une histoire de peur et d'espoir, d'échecs et de triomphes scientifiques.
+        En replaçant les découvertes scientifiques dans leur contexte historique et social, "Le Petit Livre des Grandes Épidémies" nous rappelle que la science est une entreprise humaine, marquée par la créativité, la persévérance et, malheureusement, aussi par les préjugés et les injustices.
+      </p>
+   </article>
+</main>
+       <article class="card">
       <div>
-        <h2 class="card__title">Alice Ball, the forgotten researcher</h2>
+        <h2 class="card__title">Comprendre la méthode !</h2>
         <p class="card__text">
-          Alice Ball, a brilliant chemist, revolutionized the treatment of
-          leprosy before being erased from history Rediscover her exceptional
-          journey
-        </p>
-      </div>
-      <div>
-        <img
-          src="../assets/img/PortraitAlice.webp"
-          alt="Alice Ball"
-          class="card__image"
-        />
-      </div>
-      <div>
-        <button class="card__button">
-          <a href="aliceball.html">Discover Alice Ball</a>
-        </button>
-      </div>
-    </article>
-
-    <article class="card">
-      <div>
-        <h2 class="card__title">Women Scientists in Literature</h2>
-        <p class="card__text">
-          Literature preserves the memory of women in science and gives them the
-          recognition they deserve
-        </p>
-      </div>
-      <div>
-        <img
-          src="../assets/img/accueillitterature.webp"
-          alt="open book"
-          class="card__image"
-        />
-      </div>
-      <div>
-        <button class="card__button">
-          <a href="litterature.html">The Matilda Literature</a>
-        </button>
-      </div>
-    </article>
-
-    <article class="card">
-      <div>
-        <h2 class="card__title">The Ball Method, Simplified</h2>
-        <p class="card__text">
-          Découvrez simplement le procédé chimique qui a permis à Alice Ball de
-          soigner la lèpre grâce à l'huile de chaulmoogra.
+          Découvrez simplement le procédé chimique qui a permis à Alice Ball de soigner la lèpre grâce à l'huile de chaulmoogra.
         </p>
       </div>
       <div>
         <img
           src="../assets/img/laboratoirealiceball.webp"
-          alt="Alice Ball laboratory"
+          alt="Affiche du court-métrage The Ball Method"
           class="card__image"
         />
       </div>
-      <div>
-        <button class="card__button">
-          <a href="methodeball.html">Understand the Method</a>
-        </button>
-      </div>
-    </article>
-
-    <article class="card">
-      <div>
-        <h2 class="card__title">
-          The Ball Method : When Cinema Highlights Women Scientists
-        </h2>
-        <p class="card__text">
-          The short film The Ball Method brings the young chemist and her erased
-          scientific legacy back to life.
-        </p>
-      </div>
-      <div>
-        <img
-          src="../assets/img/theballmethod.webp"
-          alt="The Ball Method poster"
-          class="card__image"
-        />
-      </div>
-      <div>
-        <button class="card__button">
-          <a href="cinema.html">Cinema</a>
-        </button>
-      </div>
-    </article>
-
-    <article class="card">
-      <div>
-        <h2 class="card__title">The Little Book of Great Epidemics</h2>
-        <p class="card__text">
-          A book to understand the great battles against diseases, mirroring
-          Alice Ball's fight
-        </p>
-      </div>
-      <div>
-        <img
-          src="../assets/img/lepetitlivredesgrandesepidemies.webp"
-          alt="Book cover"
-          class="card__image"
-        />
-      </div>
-      <div>
-        <button class="card__button">
-          <a href="livrebu.html">Explore the Book</a>
-        </button>
-      </div>
+        <div class="card__button-container">
+          <img
+            src="../assets/img/vector/arrowright.svg"
+            alt=""
+            class="card__svg"
+          />
+          <button class="card__button">
+            <a href="methodeball.html">La méthode Ball vulgarisée</a>
+          </button>
+        </div>
     </article>
     <footer class="footer">
       <div class="footer__container">
-        <a href="/" class="footer__logo-link" aria-label="Pied de page">
+        <a href="/" class="footer__logo-link" aria-label="Accueil">
           <img
-            src="assets/img/vector/logo-short.svg"
-            alt="Logo du site"
+            src="../assets/img/vector/logo-short.svg"
+            alt="Logo"
             class="footer__logo"
           />
-          <span class="footer__site-name">Éffacée de la science</span>
+          <span class="footer__site-name">Effacées de la science</span>
         </a>
-        <a href="/assets/img/vector/arrow-circle-up1.svg"></a>
+
+        <a href="#top" class="footer__back-to-top" aria-label="Retour en haut">
+          <img
+            src="../assets/img/vector/arrow-circle-up1.svg"
+            alt=""
+            class="footer__arrow-up"
+          />
+        </a>
       </div>
-      <div>
-        <nav>
-          <ul class="footer__menu-list">
-            <li class="footer__menu-item">
-              <a href="aliceball.html" class="footer__menu-link">Alice Ball</a>
-            </li>
-            <li class="footer__menu-item">
-              <a href="littérature.html" class="footer__menu-link"
-                >Littérature</a
-              >
-            </li>
-            <li class="footer__menu-item">
-              <a href="cinéma.html" class="footer__menu-link">Cinéma</a>
-            </li>
-            <li class="footer__menu-item">
-              <a href="methodeball.html" class="footer__menu-link"
-                >Méthode Ball</a
-              >
-            </li>
-            <li class="footer__menu-item">
-              <a href="livrebu.html" class="footer__menu-link">Livre BU</a>
-            </li>
-            <li class="footer__menu-item">
-              <a href="contact.html" class="footer__menu-link">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <p class="footer__text">  
-          <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/"><span>Montbéliard</span></a>
-        </p>
+
+      <div class="footer__content">
+        <h3 class="footer__tagline">Effacées de la science</h3>
+
+        <div class="footer__legal">
+          <h3 class="footer__title">Mentions légales :</h3>
+          <p class="footer__text">
+            Projet réalisé en 2025 dans le cadre d'un exercice pédagogique au
+            département MMi de
+            <a
+              class="footer__link"
+              href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/"
+              >Montbéliard</a
+            >
+          </p>
+        </div>
+
+        <div class="footer__contact">
+          <p>Design par Alexandre GUILLET</p>
+          <p>Pour me contacter,</p>
+          <a
+            href="mailto:alexandre.guillet@univ-fcomte.fr"
+            class="footer__email"
+            >alexandre.guillet@univ-fcomte.fr</a
+          >
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
-

@@ -10,6 +10,8 @@
 
 @import url("./components/buttons.css");
 
+@import url("./base/base.css");
+
 .btn-arrow {
   display: flex;
   align-items: center;

@@ -7,3 +7,17 @@ menuToggle.addEventListener("click", () => {
   menuToggle.setAttribute("aria-expanded", !isExpanded);
   nav.classList.toggle("header__nav--active");
 });
+
+function openVideo(url) {
+  const modal = document.getElementById("videoModal");
+  const player = document.getElementById("videoPlayer");
+  player.src = url;
+  modal.style.display = "flex";
+}
+
+function closeVideo() {
+  const modal = document.getElementById("videoModal");
+  const player = document.getElementById("videoPlayer");
+  player.src = "";
+  modal.style.display = "none";
+}
