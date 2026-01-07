@@ -11,33 +11,3 @@
 @import url("./components/buttons.css");
 
 @import url("./base/base.css");
-
-.btn-arrow {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--bleuf);
-  text-decoration: none;
-  font-weight: bold;
-  margin: 1rem 0;
-}
-
-.btn-arrow::before {
-  content: "➔";
-  color: var(--verts);
-  font-size: 1.2rem;
-}
-
-.timeline-item {
-  display: flex;
-  gap: 20px;
-  margin-bottom: 1.5rem;
-  align-items: center;
-}
-
-.timeline-img {
-  width: 60px;
-  height: 60px;
-  border-radius: 10px;
-  object-fit: cover;
-}

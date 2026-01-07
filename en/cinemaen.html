@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Erased from Science</title>
+    <link rel="stylesheet" href="../src/css/styles.css" />
+    <script type="" src="../src/js/script.js" defer></script>
+    <meta
+      name="description"
+      content="Site dédié à la reconnaissance des femmes dans le domaine scientifique."
+    />
+    <link
+      rel="icon"
+      href="../assets/img/vector/logo-short.svg"
+      type="image/svg"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <a href="indexen.html" class="header__logo-link" aria-label="Home">
+          <img
+            src="../assets/img/vector/logo-short.svg"
+            alt=""
+            class="header__logo"
+          />
+          <span class="header__site-name">Erased from Science</span>
+        </a>
+
+        <div class="header__actions">
+          <a
+            href="../fr/index.html"
+            class="header__lang-button"
+            aria-label="Français"
+          >
+            <img
+              src="../assets/img/vector/Languebutton.svg"
+              alt="FR"
+              class="header__lang-icon"
+            />
+          </a>
+
+          <button
+            class="header__menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="navigation"
+          >
+            <span class="header__toggle-icon">
+              <img src="../assets/img/menu.svg" alt="menu" />
+            </span>
+          </button>
+        </div>
+
+        <nav id="navigation" class="header__nav">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a href="aliceballen.html" class="header__menu-link"
+                >Alice Ball</a
+              >
+            </li>
+            <li class="header__menu-item">
+              <a href="literatureen.html" class="header__menu-link"
+                >Literature</a
+              >
+            </li>
+            <li class="header__menu-item">
+              <a href="cinemaen.html" class="header__menu-link">Cinema</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="methodeballen.html" class="header__menu-link"
+                >Ball Method</a
+              >
+            </li>
+            <li class="header__menu-item">
+              <a href="booken.html" class="header__menu-link">Featured Book</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="contacten.html" class="header__menu-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="biography">
+      <figure class="biography__figure">
+        <img
+          src="../assets/img/theballmethod.webp"
+          alt="The Ball Method poster"
+          class="biography__image"
+        />
+        <figcaption class="biography__caption">The Ball Method</figcaption>
+      </figure>
+
+      <article class="biography__content">
+        <h2 class="biography__subtitle">
+          The Ball Method — cinema spotlighting women in science
+        </h2>
+        <p class="biography__text">
+          "The Ball Method" is a 2020 short film by Dagmawi Abebe that tells the
+          remarkable story of Alice Ball. The film gives a face and a voice to a
+          brilliant scientist whose name was erased for decades. It highlights
+          her scientific discoveries and the barriers she faced as a young Black
+          woman in an early 20th-century academic world dominated by white men.
+        </p>
+
+        <h2 class="biography__subtitle">A film, a tribute, a restoration</h2>
+        <p class="biography__text">
+          The film explores the creative and historical reconstruction of Alice
+          Ball's work, showing how a 23‑year‑old researcher succeeded where
+          others had failed. It also addresses the appropriation of her research
+          by Arthur L. Dean after her untimely death, and how institutional
+          power allowed her contribution to be obscured. The short joins a
+          broader cinematic movement to rehabilitate overlooked female
+          scientists.
+        </p>
+      </article>
+
+      <section class="more-films">
+        <h2 class="biography__subtitle">More Matilda films</h2>
+
+        <div class="carousel" aria-labelledby="carousel-heading">
+          <div class="carousel__container" role="region" aria-live="polite">
+            <div class="carousel__item" onclick="openVideo('URL_VIDEO_1')">
+              <div class="carousel__media">
+                <img
+                  src="../assets/img/hidden-figures1.webp"
+                  alt="Hidden Figures poster"
+                  class="carousel__img"
+                />
+                <div class="carousel__play-overlay">
+                  <img src="../assets/img/vector/play.svg" alt="Play video" />
+                </div>
+              </div>
+              <h3 class="carousel__item-title">Hidden Figures — 2016</h3>
+            </div>
+
+            <div class="carousel__item" onclick="openVideo('URL_VIDEO_2')">
+              <div class="carousel__media">
+                <img
+                  src="../assets/img/film-radioactive1.webp"
+                  alt="Radioactive poster"
+                  class="carousel__img"
+                />
+                <div class="carousel__play-overlay">
+                  <img src="../assets/img/vector/play.svg" alt="Play video" />
+                </div>
+              </div>
+              <h3 class="carousel__item-title">Radioactive — 2019</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <a href="indexen.html" class="footer__logo-link" aria-label="Home">
+          <img
+            src="../assets/img/vector/logo-short.svg"
+            alt="Logo"
+            class="footer__logo"
+          />
+          <span class="footer__site-name">Erased from Science</span>
+        </a>
+
+        <a href="#top" class="footer__back-to-top" aria-label="Back to top">
+          <img
+            src="../assets/img/vector/arrow-circle-up1.svg"
+            alt=""
+            class="footer__arrow-up"
+          />
+        </a>
+      </div>
+
+      <div class="footer__content">
+        <h3 class="footer__tagline">Erased from Science</h3>
+
+        <div class="footer__legal">
+          <h3 class="footer__title">Legal Notice :</h3>
+          <p class="footer__text">
+            Project completed in 2025 as part of an educational exercise at the
+            MMi department of
+            <a
+              class="footer__link"
+              href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/"
+              >Montbéliard</a
+            >
+          </p>
+        </div>
+
+        <div class="footer__contact">
+          <p>Design by Alexandre GUILLET</p>
+          <p>To contact me,</p>
+          <a
+            href="mailto:alexandre.guillet@univ-fcomte.fr"
+            class="footer__email"
+            >alexandre.guillet@univ-fcomte.fr</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

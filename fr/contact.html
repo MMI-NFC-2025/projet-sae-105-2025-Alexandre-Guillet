@@ -87,10 +87,14 @@
 
     <main>
       <section class="contact">
-        <h1 class="contact__title">Contact Us</h1>
+        <h1 class="contact__title">Contactez-nous</h1>
+        <h2 class="contact__subtitle">
+          Vous avez des questions ou des remarques sur l'Effet Matilda ?
+          N'hésitez pas à nous contacter.
+        </h2>
         <form class="contact__form" action="#" method="POST">
           <div class="contact__form-group">
-            <label for="name" class="contact__form-label">Name</label>
+            <label for="name" class="contact__form-label">Nom</label>
             <input
               type="text"
               id="name"
@@ -110,6 +114,16 @@
             />
           </div>
           <div class="contact__form-group">
+            <label for="subject" class="contact__form-label">Sujet</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              class="contact__form-input"
+              placeholder="Sujet de votre message"
+            />
+          </div>
+          <div class="contact__form-group">
             <label for="message" class="contact__form-label">Message</label>
             <textarea
               id="message"
@@ -120,9 +134,29 @@
             ></textarea>
           </div>
           <button type="submit" class="contact__form-button">
-            Send Message
+            Envoyer le message
           </button>
         </form>
+      </section>
+
+      <section class="biography">
+            <article class="biography__content">
+      <h2 class="biography__subtitle">À propos</h2>
+      <p class="biography__text">
+        Je suis Alexandre Guillet, étudiant en MMi (Métiers du Multimédia et de l'Internet). Ce site, Effacées de la science, s'inscrit dans un projet de valorisation des femmes scientifiques dont les travaux ont été oubliés ou attribués à d'autres. Mon objectif est de sensibiliser à l'Effet Matilda et de mettre en lumière celles qui ont marqué la recherche, sans toujours recevoir la reconnaissance qu'elles méritaient.
+      </p>
+          <article class="biography__content">
+      <h2 class="biography__subtitle">Glossaire</h2>
+      <p class="biography__text">
+        Effet Matilda
+        Phénomène de déni ou de minimisation de la contribution des femmes scientifiques à la recherche, dont le travail est souvent attribué à leurs collègues masculins. Le terme a été inventé par l'historienne Margaret Rossiter en 1993.
+      </p>
+      <p class="biography__text">
+        Huile de Chaulmoogra
+        Huile extraite des graines de l'arbre Hydnocarpus wightianus, utilisée traditionnellement dans le traitement de la lèpre mais difficile à administrer avant la méthode Ball.
+      </p>
+
+       
       </section>
     </main>
 

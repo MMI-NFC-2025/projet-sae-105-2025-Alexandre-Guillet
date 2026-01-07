@@ -214,7 +214,7 @@
 
 .timeline__arrow {
   width: 2rem;
-  transform: rotate(90deg); /* Flèche vers le bas sur mobile */
+  transform: rotate(90deg);
   opacity: 0.5;
 }
 
@@ -276,4 +276,99 @@
   .timeline__item--reverse .timeline__arrow {
     transform: translateX(-50%) rotate(180deg);
   }
+}
+
+.contact {
+  padding: 4rem 1.5rem;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.contact__title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  color: var(--bleuf);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contact__subtitle {
+  font-family: "Crimson Text", serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--bleuf);
+  text-align: center;
+  margin-bottom: 3rem;
+  opacity: 0.9;
+}
+
+.contact__form {
+  background-color: var(--cream);
+  padding: 2.5rem;
+  border-radius: 2.5rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  border: 0.0625rem solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact__form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact__form-label {
+  font-family: "Playfair Display", serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--bleuf);
+}
+
+.contact__form-input,
+.contact__form-textarea {
+  font-family: "Crimson Text", serif;
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  border: 0.0625rem solid #ccc;
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  color: var(--bleuf);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact__form-input::placeholder,
+.contact__form-textarea::placeholder {
+  color: #ccc;
+}
+
+.contact__form-input:focus,
+.contact__form-textarea:focus {
+  outline: none;
+  border-color: var(--bleuf);
+  box-shadow: 0 0 0 0.2rem rgba(20, 30, 70, 0.1);
+}
+
+.contact__form-button {
+  background-color: var(--bleuf);
+  color: var(--white);
+  font-family: "Playfair Display", serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.contact__form-button:hover {
+  background-color: var(--bleuf);
+  transform: translateY(-0.125rem);
+}
+
+.contact__form-button:active {
+  transform: translateY(0);
 }
