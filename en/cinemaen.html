@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Erased from Science</title>
     <link rel="stylesheet" href="../src/css/styles.css" />
-    <script type="" src="../src/js/script.js" defer></script>
+    <script type="module" src="/src/js/script.js"></script>
     <meta
       name="description"
       content="Site dédié à la reconnaissance des femmes dans le domaine scientifique."
@@ -124,7 +124,10 @@
 
         <div class="carousel" aria-labelledby="carousel-heading">
           <div class="carousel__container" role="region" aria-live="polite">
-            <div class="carousel__item" onclick="openVideo('URL_VIDEO_1')">
+            <div
+              class="carousel__item"
+              data-trailer="https:\\cloud.alexandreguillet.fr/teas_vo_hf.mp4"
+            >
               <div class="carousel__media">
                 <img
                   src="../assets/img/hidden-figures1.webp"
@@ -138,7 +141,10 @@
               <h3 class="carousel__item-title">Hidden Figures — 2016</h3>
             </div>
 
-            <div class="carousel__item" onclick="openVideo('URL_VIDEO_2')">
+            <div
+              class="carousel__item"
+              data-trailer="https:\\cloud.alexandreguillet.fr/radioactive_vo.mp4"
+            >
               <div class="carousel__media">
                 <img
                   src="../assets/img/film-radioactive1.webp"
@@ -154,6 +160,17 @@
           </div>
         </div>
       </section>
+      <div id="videoModal" class="modal close">
+        <div class="modal__content">
+          <button class="close-btn">Close</button>
+          <video
+            id="videoPlayer"
+            src="/assets/video/radioactive_vf.mp4"
+            type="video/mp4"
+            controls
+          ></video>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">

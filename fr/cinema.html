@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Éffacées de la science</title>
     <link rel="stylesheet" href="../src/css/styles.css" />
-    <script type="" src="../src/js/script.js" defer></script>
+    <script type="module" src="/src/js/script.js" defer></script>
     <meta
       name="description"
       content="Site dédié à la reconnaissance des femmes dans le domaine scientifique."
@@ -134,7 +134,7 @@
 
         <div class="carousel" aria-labelledby="carousel-heading">
           <div class="carousel__container" role="region" aria-live="polite">
-            <div class="carousel__item" onclick="openVideo('')">
+            <div class="carousel__item" data-trailer="https:\\cloud.alexandreguillet.fr/teas_vf_hf.mp4">
               <div class="carousel__media">
                 <img
                   src="../assets/img/hidden-figures1.webp"
@@ -153,7 +153,7 @@
               </h3>
             </div>
 
-            <div class="carousel__item" onclick="openVideo('URL_VIDEO_2')">
+            <div class="carousel__item" data-trailer="https:\\cloud.alexandreguillet.fr/radioactive_vf.mp4">
               <div class="carousel__media">
                 <img
                   src="../assets/img/film-radioactive1.webp"
@@ -173,14 +173,15 @@
         </div>
       </section>
 
-      <div id="videoModal" class="modal" onclick="closeVideo()">
+      <div id="videoModal" class="modal close">
         <div class="modal__content">
-          <iframe
+          <button class="close-btn">Close</button>
+          <video
             id="videoPlayer"
-            src=""
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
+            src="/assets/video/radioactive_vf.mp4"
+            type="video/mp4"
+            controls
+          ></video>
         </div>
       </div>
       <div>

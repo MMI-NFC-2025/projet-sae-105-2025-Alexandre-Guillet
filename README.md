@@ -7,5 +7,5 @@
 - NOM : Guillet
 - PRÉNOM : Alexandre
 - GROUPE : C2
-- URL du site :
-- URL FIGMA :
+- URL du site : https://erasedfromscience.alexandreguillet.fr
+- URL FIGMA : https://www.figma.com/design/s50vOZ9JWjXKaaYo52vog4/Maquettes-projet-individuel-%E2%80%94-Alexandre-GUILLET--copie-?node-id=3813-2417&t=P1YVPZhsVdX9xW9t-1
